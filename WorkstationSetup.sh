@@ -3,6 +3,14 @@ echo "alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoremov
 # Update APT
 sudo apt-get update
 sudo apt update && sudo apt upgrade -y && sudo snap refresh
+# Ubuntu Games & Preinstalled
+sudo apt remove -y libreoffice*
+sudo apt remove -y thunderbird*
+sudo apt remove -y gnome-sudoku
+sudo apt remove -y gnome-mahjongg
+sudo apt remove -y gnome-mines
+sudo apt remove -y aisleriot
+sudo apt autoremove -y
 # Microsoft Packages
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
@@ -33,8 +41,6 @@ cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-key
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
   sudo tee /etc/apt/sources.list.d/signal-xenial.list
 sudo apt install -y signal-desktop
-# Remove LibreOffice
-sudo apt remove -y libreoffice*
 # Git
 sudo apt install -y git
 git config --global submodule.recurse true
