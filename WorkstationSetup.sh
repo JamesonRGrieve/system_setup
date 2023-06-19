@@ -38,8 +38,8 @@ sudo apt remove -y libreoffice*
 # Git
 sudo apt install -y git
 git config --global submodule.recurse true
-git config --global user.email "josh@devxt.com"
-git config --global user.name "Josh XT"
+git config --global user.email "jamesonrgrieve@gmail.com"
+git config --global user.name "Jameson Grieve"
 echo "Updates" > ~/.gitmessage
 git config --global commit.template ~/.gitmessage
 # Python
