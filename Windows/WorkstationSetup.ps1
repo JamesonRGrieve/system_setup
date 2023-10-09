@@ -90,7 +90,7 @@ winget install -e --id Piriform.Defraggler --location $softwaredrive":\WINGET\Ut
 winget install -e --id CrystalDewWorld.CrystalDiskInfo --location $softwaredrive":\WINGET\Utilities\CrystalDiskInfo"
 winget install -e --id CrystalDewWorld.CrystalDiskMark --location $softwaredrive":\WINGET\Utilities\CrystalDiskMark"
 winget install -e --id qBittorrent.qBittorrent --location $softwaredrive":\WINGET\Utilities\qBittorrent"
-winget install -e --id Datronicsoft.SpacedeskDriver.Server --location $softwaredrive":\WINGET\Utilities\Spacedesk"
+winget install -e --id pavlobu.deskreen --location $softwaredrive":\WINGET\Utilities\Deskreen"
 
 winget install -e --id BlenderFoundation.Blender --location $softwaredrive":\WINGET\CAD\Blender"
 winget install -e --id OpenSCAD.OpenSCAD --location $softwaredrive":\WINGET\CAD\OpenSCAD"
